@@ -61,32 +61,57 @@ const categories = {
     },
     carousel: {
         label: "LinkedIn Carousels",
-        desc: "Editorial style carousel: India Solar Policy Updates 2026 (5 slide series).",
+        desc: "Editorial style carousels for thought leadership: Solar Policy Updates & Solis Inverter series.",
         items: [
             {
-                title: "Slide 1 · Cover",
+                title: "Solar Policy · Cover",
                 tag: "Carousel",
                 img: "https://customer-assets.emergentagent.com/job_dhiraj-designer/artifacts/2n40e1hf_TOD%20Carousel%20%282%29%20%281%29.png",
             },
             {
-                title: "Slide 2 · Subsidies & Banking",
+                title: "Solar Policy · Subsidies & Banking",
                 tag: "Carousel",
                 img: "https://customer-assets.emergentagent.com/job_dhiraj-designer/artifacts/xjh8hw9h_TOD%20Carousel%20%283%29%20%281%29.png",
             },
             {
-                title: "Slide 3 · TOD Tariff",
+                title: "Solar Policy · TOD Tariff",
                 tag: "Carousel",
                 img: "https://customer-assets.emergentagent.com/job_dhiraj-designer/artifacts/3ofk2dj9_TOD%20Carousel%20%284%29%20%281%29.png",
             },
             {
-                title: "Slide 4 · Grid Charges",
+                title: "Solar Policy · Grid Charges",
                 tag: "Carousel",
                 img: "https://customer-assets.emergentagent.com/job_dhiraj-designer/artifacts/0jbzddn8_TOD%20Carousel%20%285%29%20%281%29.png",
             },
             {
-                title: "Slide 5 · CTA",
+                title: "Solar Policy · CTA",
                 tag: "Carousel",
                 img: "https://customer-assets.emergentagent.com/job_dhiraj-designer/artifacts/qoml9sk4_TOD%20Carousel%20%286%29.png",
+            },
+            {
+                title: "Solis Inverter · Cover",
+                tag: "Carousel",
+                img: "https://customer-assets.emergentagent.com/job_dhiraj-designer/artifacts/by4qcb8d_1.png",
+            },
+            {
+                title: "Solis · High Efficiency 98.8%",
+                tag: "Carousel",
+                img: "https://customer-assets.emergentagent.com/job_dhiraj-designer/artifacts/7lnzgta2_2.png",
+            },
+            {
+                title: "Solis · Wide MPPT Range",
+                tag: "Carousel",
+                img: "https://customer-assets.emergentagent.com/job_dhiraj-designer/artifacts/lxidspb6_3.png",
+            },
+            {
+                title: "Solis · Reliable Grid Support",
+                tag: "Carousel",
+                img: "https://customer-assets.emergentagent.com/job_dhiraj-designer/artifacts/opw6tnvq_4.png",
+            },
+            {
+                title: "Solis · Indian Conditions",
+                tag: "Carousel",
+                img: "https://customer-assets.emergentagent.com/job_dhiraj-designer/artifacts/invvo1a2_5.png",
             },
         ],
     },
