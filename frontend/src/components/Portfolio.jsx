@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "../components/ui/tabs";
-import { Dialog, DialogContent, DialogTrigger } from "../components/ui/dialog";
+import { Dialog, DialogContent, DialogTrigger, DialogTitle, DialogDescription } from "../components/ui/dialog";
 import useReveal from "../hooks/useReveal";
 import { Layers, ImageIcon, Expand } from "lucide-react";
 
@@ -77,6 +77,8 @@ const Card = ({ item, idx, catKey }) => (
             </button>
         </DialogTrigger>
         <DialogContent className="bg-[#0B1221] border border-white/10 max-w-3xl p-2">
+            <DialogTitle className="sr-only">{item.title}</DialogTitle>
+            <DialogDescription className="sr-only">{item.tag} preview</DialogDescription>
             <img src={item.img} alt={item.title} className="rounded-lg w-full" />
             <div className="px-4 pt-2 pb-3">
                 <p className="text-xs uppercase tracking-widest text-cyan-400 font-bold">
