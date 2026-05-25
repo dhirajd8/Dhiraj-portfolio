@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "../components/ui/tabs";
 import { Dialog, DialogContent, DialogTrigger, DialogTitle, DialogDescription } from "../components/ui/dialog";
 import useReveal from "../hooks/useReveal";
-import { Layers, ImageIcon, Expand } from "lucide-react";
+import { Expand } from "lucide-react";
 
 const AD_CREATIVE =
     "https://static.prod-images.emergentagent.com/jobs/d5d9d62d-a8cb-402b-871a-858009070525/images/a5ffab54b7db00260374b3f75dd21c988b80aa1502790d03a8d79d7f1a246091.png";
@@ -11,20 +11,38 @@ const FESTIVAL =
 const CAROUSEL =
     "https://static.prod-images.emergentagent.com/jobs/d5d9d62d-a8cb-402b-871a-858009070525/images/a83f0f472d478b640024f7aa8f57ff0c8a9b117615bf95d4642671a1800cc1c2.png";
 
+const AD_CREATIVES_REAL = [
+    {
+        title: "Shravani Multiservices",
+        tag: "Service Ad",
+        img: "https://customer-assets.emergentagent.com/job_dhiraj-designer/artifacts/vx45ievl_WhatsApp%20Image%202025-07-17%20at%2012.11.23%20PM%20%281%29.jpeg",
+    },
+    {
+        title: "Renuka Constructions & Suppliers",
+        tag: "Construction",
+        img: "https://customer-assets.emergentagent.com/job_dhiraj-designer/artifacts/4s4qa8t2_Renuka%20Construction.jpg",
+    },
+    {
+        title: "Pikvima Crop Insurance",
+        tag: "Agriculture",
+        img: "https://customer-assets.emergentagent.com/job_dhiraj-designer/artifacts/o09agalw_20250716_200430%20%281%29%20%282%29.jpg",
+    },
+    {
+        title: "Shravani Service Promo",
+        tag: "Service Ad",
+        img: "https://customer-assets.emergentagent.com/job_dhiraj-designer/artifacts/ifm2m6jf_20250627_215001%20%282%29.jpg",
+    },
+];
+
 const categories = {
     ads: {
         label: "Ad Creatives",
-        desc: "Performance-driven creatives engineered for clicks, leads & ROAS.",
-        items: [
-            { title: "Wellness Lead Gen Creative", tag: "Meta Ads", img: AD_CREATIVE },
-            { title: "Insurance Awareness Set", tag: "Meta Ads", img: AD_CREATIVE },
-            { title: "Construction Lead Magnet", tag: "Meta Ads", img: AD_CREATIVE },
-            { title: "Fitness Studio Promo", tag: "Meta Ads", img: AD_CREATIVE },
-        ],
+        desc: "Performance driven creatives engineered for clicks, leads & ROAS.",
+        items: AD_CREATIVES_REAL,
     },
     festival: {
         label: "Festival Posts",
-        desc: "Brand-celebratory visuals for festive moments across India.",
+        desc: "Brand celebratory visuals for festive moments across India.",
         items: [
             { title: "Diwali Greeting Post", tag: "Festival", img: FESTIVAL },
             { title: "Republic Day Tribute", tag: "Festival", img: FESTIVAL },
@@ -34,7 +52,7 @@ const categories = {
     },
     carousel: {
         label: "LinkedIn Carousels",
-        desc: "Editorial-style carousels that build thought-leadership feeds.",
+        desc: "Editorial style carousels that build thought leadership feeds.",
         items: [
             { title: "5 Meta Ads Mistakes", tag: "Carousel", img: CAROUSEL },
             { title: "Performance Marketing 101", tag: "Carousel", img: CAROUSEL },
@@ -56,7 +74,7 @@ const Card = ({ item, idx, catKey }) => (
                         src={item.img}
                         alt={item.title}
                         loading="lazy"
-                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                        className="w-full h-full object-cover"
                     />
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-[#040814] via-[#040814]/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
@@ -112,7 +130,7 @@ const Portfolio = () => {
                     </h2>
                     <p className="mt-4 text-slate-400">
                         A curated selection of ad creatives, festival posts and
-                        LinkedIn carousels — built for scroll-stopping impact.
+                        LinkedIn carousels, built for scroll stopping impact.
                     </p>
                 </div>
 
@@ -148,16 +166,6 @@ const Portfolio = () => {
                         </TabsContent>
                     ))}
                 </Tabs>
-
-                <div className="mt-12 flex flex-wrap items-center justify-center gap-6 text-xs uppercase tracking-[0.25em] text-slate-500 font-semibold">
-                    <span className="inline-flex items-center gap-2">
-                        <ImageIcon size={14} className="text-cyan-400" /> 12+ Creatives
-                    </span>
-                    <span className="w-1 h-1 rounded-full bg-slate-600" />
-                    <span className="inline-flex items-center gap-2">
-                        <Layers size={14} className="text-amber-400" /> 3 Categories
-                    </span>
-                </div>
             </div>
         </section>
     );

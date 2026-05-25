@@ -57,7 +57,7 @@ const Connect = () => {
                         <span className="text-gradient">remarkable</span>.
                     </h2>
                     <p className="mt-5 text-slate-400 text-lg">
-                        Reach me on any of these platforms — or drop a direct
+                        Reach me on any of these platforms or drop a direct
                         line. I respond fast.
                     </p>
                 </div>

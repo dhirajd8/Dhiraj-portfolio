@@ -30,18 +30,11 @@ const ThankYou = () => {
 
                 <p className="mt-8 text-lg md:text-xl text-slate-300 max-w-2xl mx-auto leading-relaxed">
                     For taking the time to explore my portfolio. Every project
-                    here is a small chapter — and I'd love to write the next one
+                    here is a small chapter, and I'd love to write the next one
                     with you.
                 </p>
 
                 <div className="mt-10 flex flex-wrap justify-center gap-4">
-                    <a
-                        data-testid="footer-hire-btn"
-                        href="mailto:dhirajdayanand8@gmail.com?subject=Let%27s%20Work%20Together"
-                        className="inline-flex items-center gap-2 bg-cyan-500 hover:bg-cyan-400 text-[#040814] font-bold py-3 px-7 rounded-full transition-all duration-300 shadow-[0_0_25px_rgba(6,182,212,0.45)] hover:shadow-[0_0_40px_rgba(6,182,212,0.7)]"
-                    >
-                        Start a Project
-                    </a>
                     <button
                         data-testid="back-to-top-btn"
                         onClick={scrollTop}
@@ -51,13 +44,10 @@ const ThankYou = () => {
                     </button>
                 </div>
 
-                <div className="mt-16 pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-500">
+                <div className="mt-16 pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-center gap-3 text-xs text-slate-500">
                     <span className="font-medium tracking-wider">
                         © {new Date().getFullYear()} DHIRAJ DAYANAND · ALL
                         RIGHTS RESERVED
-                    </span>
-                    <span className="font-medium tracking-wider uppercase">
-                        Crafted with care · Pune, India
                     </span>
                 </div>
             </div>

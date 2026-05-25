@@ -40,12 +40,11 @@ const Navbar = () => {
                     onClick={() => goto("hero")}
                     className="flex items-center gap-2 group"
                 >
-                    <span className="w-9 h-9 rounded-xl bg-gradient-to-br from-cyan-400 to-blue-600 flex items-center justify-center font-black text-[#040814] text-lg group-hover:scale-110 transition-transform">
-                        D
-                    </span>
-                    <span className="font-bold text-white tracking-tight hidden sm:block">
-                        Dhiraj<span className="text-cyan-400">.</span>
-                    </span>
+                    <img
+                        src="https://customer-assets.emergentagent.com/job_d5d9d62d-a8cb-402b-871a-858009070525/artifacts/l73o5rga_dhiraj%20photo%20%284%29.png"
+                        alt="Dhiraj Dayanand"
+                        className="w-11 h-11 rounded-full object-cover border-2 border-cyan-400/40 group-hover:border-cyan-400 group-hover:scale-105 transition-all shadow-[0_0_15px_rgba(6,182,212,0.35)]"
+                    />
                 </button>
 
                 <ul className="hidden md:flex items-center gap-1">

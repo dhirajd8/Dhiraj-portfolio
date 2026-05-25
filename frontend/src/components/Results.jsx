@@ -1,17 +1,20 @@
 import React from "react";
 import useReveal from "../hooks/useReveal";
-import { TrendingUp, Target, Zap, Award } from "lucide-react";
+import {
+    TrendingUp,
+    Target,
+    Zap,
+} from "lucide-react";
 
 const META_SHOT_1 =
-    "https://customer-assets.emergentagent.com/job_d5d9d62d-a8cb-402b-871a-858009070525/artifacts/m6nc060o_image.png";
-const META_SHOT_2 =
     "https://customer-assets.emergentagent.com/job_d5d9d62d-a8cb-402b-871a-858009070525/artifacts/n72lfn0m_image.png";
+const META_SHOT_2 =
+    "https://customer-assets.emergentagent.com/job_d5d9d62d-a8cb-402b-871a-858009070525/artifacts/m6nc060o_image.png";
 
 const highlights = [
     { icon: TrendingUp, value: "847.9%", label: "Peak ROAS" },
     { icon: Target, value: "₹0.69", label: "Lowest CPC" },
     { icon: Zap, value: "3.63%", label: "Best CTR" },
-    { icon: Award, value: "₹3.7L+", label: "Ad Spend Managed" },
 ];
 
 const Results = () => {
@@ -33,14 +36,14 @@ const Results = () => {
                         <span className="text-gold">measure</span>.
                     </h2>
                     <p className="mt-4 text-slate-400 text-lg">
-                        A snapshot from Meta Ads Manager — campaigns executed
+                        A snapshot from Meta Ads Manager. Campaigns executed
                         across wellness, insurance, fitness and construction
                         verticals.
                     </p>
                 </div>
 
                 {/* Highlight stats */}
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-5 mb-12">
+                <div className="grid grid-cols-3 gap-3 md:gap-5 mb-12">
                     {highlights.map((h, i) => (
                         <div
                             key={h.label}
@@ -73,14 +76,14 @@ const Results = () => {
                                     <span className="w-2.5 h-2.5 rounded-full bg-green-400/70" />
                                 </div>
                                 <span className="text-[10px] uppercase tracking-[0.2em] font-bold text-slate-500">
-                                    Meta Ads Manager · Campaign {i + 1}
+                                    Meta Ads Manager Real Snapshots
                                 </span>
                             </div>
                             <div className="rounded-xl overflow-hidden border border-white/5 bg-white/5">
                                 <img
                                     src={src}
                                     alt={`Meta ads campaign result ${i + 1}`}
-                                    className="w-full h-auto object-cover group-hover:scale-[1.02] transition-transform duration-700"
+                                    className="w-full h-auto object-cover"
                                 />
                             </div>
                             <div className="absolute -inset-px rounded-2xl pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity bg-gradient-to-br from-cyan-400/0 via-amber-400/10 to-cyan-400/0" />

@@ -1,19 +1,10 @@
 import React from "react";
-import {
-    TrendingUp,
-    Target,
-    Palette,
-    BarChart3,
-    Users,
-    Zap,
-} from "lucide-react";
+import { TrendingUp, Target } from "lucide-react";
 import useReveal from "../hooks/useReveal";
 
 const stats = [
     { value: "1.5+", label: "Years Experience", icon: TrendingUp },
     { value: "20+", label: "Campaigns Run", icon: Target },
-    { value: "847%", label: "Peak ROAS", icon: BarChart3 },
-    { value: "10+", label: "Happy Clients", icon: Users },
 ];
 
 const skills = [
@@ -68,8 +59,8 @@ const About = () => {
                             I'm{" "}
                             <span className="text-white font-semibold">
                                 Dhiraj Dayanand
-                            </span>{" "}
-                            — a Digital Marketing Executive currently driving
+                            </span>
+                            , a Digital Marketing Executive currently driving
                             growth at{" "}
                             <span className="text-cyan-300 font-semibold">
                                 OSG Oriana India
@@ -81,15 +72,12 @@ const About = () => {
                         </p>
                         <p className="text-base text-slate-400 leading-relaxed">
                             My approach blends sharp performance marketing with
-                            clean, brand-aware design — so the same hand that
+                            clean, brand-aware design, so the same hand that
                             tunes the campaign also crafts the creative. From
-                            achieving{" "}
-                            <span className="text-amber-400 font-semibold">
-                                847.9% ROAS
-                            </span>{" "}
-                            for a health-industry client to designing festival
-                            posts, ad creatives and LinkedIn carousels — I aim
-                            to make every rupee and every pixel count.
+                            running structured Meta Ads campaigns to designing
+                            festival posts, ad creatives and LinkedIn
+                            carousels, I aim to make every rupee and every
+                            pixel count.
                         </p>
 
                         {/* Skills chips */}
@@ -108,7 +96,7 @@ const About = () => {
                 </div>
 
                 {/* Stats grid */}
-                <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+                <div className="mt-20 grid grid-cols-2 gap-4 md:gap-6 max-w-2xl mx-auto">
                     {stats.map((s, i) => (
                         <div
                             key={s.label}

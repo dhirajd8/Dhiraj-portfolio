@@ -38,15 +38,18 @@ const experiences = [
         points: [
             "Hands-on with Meta Ads, organic content & analytics.",
             "Built foundation in lead-gen funnels and ad creative testing.",
+            "Learned complete agency workflows, internal hierarchy, and reporting processes in detail.",
         ],
     },
 ];
 
 const Hero = () => {
+    const RESUME_URL =
+        "https://customer-assets.emergentagent.com/job_dhiraj-designer/artifacts/2gk6wqvy_Dhiraj%20Dayanand%20_%20LinkedIn%20%281%29.pdf";
+
     const handleResume = () => {
-        toast.info(
-            "Resume will be available shortly — Dhiraj is updating the latest version.",
-        );
+        toast.success("Opening resume PDF...");
+        window.open(RESUME_URL, "_blank", "noopener,noreferrer");
     };
 
     return (
