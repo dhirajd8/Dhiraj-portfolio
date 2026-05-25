@@ -4,13 +4,6 @@ import { Dialog, DialogContent, DialogTrigger, DialogTitle, DialogDescription } 
 import useReveal from "../hooks/useReveal";
 import { Expand } from "lucide-react";
 
-const AD_CREATIVE =
-    "https://static.prod-images.emergentagent.com/jobs/d5d9d62d-a8cb-402b-871a-858009070525/images/a5ffab54b7db00260374b3f75dd21c988b80aa1502790d03a8d79d7f1a246091.png";
-const FESTIVAL =
-    "https://static.prod-images.emergentagent.com/jobs/d5d9d62d-a8cb-402b-871a-858009070525/images/515ca4f4da164c11bae299b3b570bc9067a3d9b91fb4201259e3bad3d59f0887.png";
-const CAROUSEL =
-    "https://static.prod-images.emergentagent.com/jobs/d5d9d62d-a8cb-402b-871a-858009070525/images/a83f0f472d478b640024f7aa8f57ff0c8a9b117615bf95d4642671a1800cc1c2.png";
-
 const AD_CREATIVES_REAL = [
     {
         title: "Shravani Multiservices",
@@ -44,20 +37,57 @@ const categories = {
         label: "Festival Posts",
         desc: "Brand celebratory visuals for festive moments across India.",
         items: [
-            { title: "Diwali Greeting Post", tag: "Festival", img: FESTIVAL },
-            { title: "Republic Day Tribute", tag: "Festival", img: FESTIVAL },
-            { title: "Eid Mubarak Brand Post", tag: "Festival", img: FESTIVAL },
-            { title: "Ganesh Chaturthi Wishes", tag: "Festival", img: FESTIVAL },
+            {
+                title: "Happy Ram Navami",
+                tag: "Festival",
+                img: "https://customer-assets.emergentagent.com/job_dhiraj-designer/artifacts/qzzquuyp_HAPPY%20RAM%20NAVAMI%20%281%29.jpg",
+            },
+            {
+                title: "Happy Mother's Day",
+                tag: "Festival",
+                img: "https://customer-assets.emergentagent.com/job_dhiraj-designer/artifacts/s9w8sn1k_WhatsApp%20Image%202026-05-10%20at%2011.21.33%20AM%20%281%29.jpeg",
+            },
+            {
+                title: "Happy Gudi Padwa",
+                tag: "Festival",
+                img: "https://customer-assets.emergentagent.com/job_dhiraj-designer/artifacts/t5fhcvr7_WhatsApp%20Image%202026-03-19%20at%209.41.46%20AM%20%281%29.jpeg",
+            },
+            {
+                title: "World Earth Day",
+                tag: "Festival",
+                img: "https://customer-assets.emergentagent.com/job_dhiraj-designer/artifacts/athrksnp_WORLD%20EARTH%20DAY%20%281%29%20%281%29.png",
+            },
         ],
     },
     carousel: {
         label: "LinkedIn Carousels",
-        desc: "Editorial style carousels that build thought leadership feeds.",
+        desc: "Editorial style carousel: India Solar Policy Updates 2026 (5 slide series).",
         items: [
-            { title: "5 Meta Ads Mistakes", tag: "Carousel", img: CAROUSEL },
-            { title: "Performance Marketing 101", tag: "Carousel", img: CAROUSEL },
-            { title: "Creative Testing Framework", tag: "Carousel", img: CAROUSEL },
-            { title: "Funnel Stages Explained", tag: "Carousel", img: CAROUSEL },
+            {
+                title: "Slide 1 · Cover",
+                tag: "Carousel",
+                img: "https://customer-assets.emergentagent.com/job_dhiraj-designer/artifacts/2n40e1hf_TOD%20Carousel%20%282%29%20%281%29.png",
+            },
+            {
+                title: "Slide 2 · Subsidies & Banking",
+                tag: "Carousel",
+                img: "https://customer-assets.emergentagent.com/job_dhiraj-designer/artifacts/xjh8hw9h_TOD%20Carousel%20%283%29%20%281%29.png",
+            },
+            {
+                title: "Slide 3 · TOD Tariff",
+                tag: "Carousel",
+                img: "https://customer-assets.emergentagent.com/job_dhiraj-designer/artifacts/3ofk2dj9_TOD%20Carousel%20%284%29%20%281%29.png",
+            },
+            {
+                title: "Slide 4 · Grid Charges",
+                tag: "Carousel",
+                img: "https://customer-assets.emergentagent.com/job_dhiraj-designer/artifacts/0jbzddn8_TOD%20Carousel%20%285%29%20%281%29.png",
+            },
+            {
+                title: "Slide 5 · CTA",
+                tag: "Carousel",
+                img: "https://customer-assets.emergentagent.com/job_dhiraj-designer/artifacts/qoml9sk4_TOD%20Carousel%20%286%29.png",
+            },
         ],
     },
 };
@@ -69,12 +99,12 @@ const Card = ({ item, idx, catKey }) => (
                 data-testid={`portfolio-item-${catKey}-${idx}`}
                 className="group relative overflow-hidden rounded-2xl bg-[#0B1221] border border-white/10 hover:border-cyan-400/40 transition-all duration-500 text-left"
             >
-                <div className="aspect-[4/5] overflow-hidden bg-slate-900">
+                <div className="aspect-square overflow-hidden bg-[#040814] flex items-center justify-center p-2">
                     <img
                         src={item.img}
                         alt={item.title}
                         loading="lazy"
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-contain"
                     />
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-[#040814] via-[#040814]/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
