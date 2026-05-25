@@ -1,0 +1,121 @@
+{
+  "theme": "dark",
+  "archetype": "5 (Luxury / Premium Corporate)",
+  "design_philosophy": "A high-end, premium corporate portfolio designed for a Digital Marketing Executive. It balances dark luxurious aesthetics with sharp, data-driven professionalism. The layout emphasizes asymmetry and bento-grid structures to present the 'Hire Me' and 'Experience' sections side-by-side.",
+  "colors": {
+    "background": "#040814",
+    "surface": "#0B1221",
+    "surface_glass": "rgba(11, 18, 33, 0.6)",
+    "primary": "#06b6d4",
+    "primary_hover": "#0891b2",
+    "secondary": "#3b82f6",
+    "accent_highlight": "#f59e0b",
+    "text_primary": "#ffffff",
+    "text_secondary": "#94a3b8",
+    "border": "rgba(255, 255, 255, 0.1)"
+  },
+  "typography": {
+    "font_family_primary": "'Poppins', sans-serif",
+    "font_family_secondary": "'Poppins', sans-serif",
+    "rules": {
+      "h1": "text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white",
+      "h2": "text-3xl sm:text-4xl font-bold tracking-tight text-white",
+      "h3": "text-xl sm:text-2xl font-bold text-white",
+      "body": "text-base text-[#94a3b8] font-normal leading-relaxed",
+      "labels": "text-sm uppercase tracking-[0.2em] font-bold text-[#06b6d4]"
+    },
+    "notes": "User explicitly requested Poppins Bold and Regular. Ensure Poppins is imported from Google Fonts."
+  },
+  "spacing_and_layout": {
+    "section_padding": "py-24 md:py-32",
+    "container": "max-w-7xl mx-auto px-6 md:px-12",
+    "grid_bento": "grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8",
+    "border_radius": "rounded-2xl"
+  },
+  "components": {
+    "header": {
+      "type": "fixed_glass",
+      "classes": "fixed top-0 w-full z-50 backdrop-blur-xl bg-[#040814]/70 border-b border-white/5",
+      "navigation": ["About", "Experience", "Portfolio", "Results", "Connect"]
+    },
+    "hero_bento_section": {
+      "layout": "Grid side-by-side",
+      "left_card_hire_me": {
+        "col_span": "lg:col-span-5",
+        "content": "User Photo, Tagline: 'Digital Marketing Executive', Contact (Phone: 7219332803, Email: dhirajdayanand8@gmail.com), 'Hire Me' title, Download Resume Button."
+      },
+      "right_card_experience": {
+        "col_span": "lg:col-span-7",
+        "content": "Timeline layout. 1: Digital Marketing Executive @ OSG Oriana India Pvt Ltd (Jan 2026-Present). 2: Digital Marketing Associate @ Pooinfotech Digital Solutions (Sep 2025-Dec 2025). 3: Digital Marketing Intern @ POOINFOTECH (Mar 2025-Aug 2025)."
+      }
+    },
+    "buttons": {
+      "primary": "bg-[#06b6d4] hover:bg-[#0891b2] text-white font-bold py-3 px-6 rounded-full transition-all duration-300 shadow-[0_0_20px_rgba(6,182,212,0.3)] hover:shadow-[0_0_30px_rgba(6,182,212,0.5)]",
+      "secondary": "bg-transparent border border-white/20 hover:border-white/50 text-white font-bold py-3 px-6 rounded-full transition-all duration-300"
+    },
+    "cards": {
+      "style": "bg-[#0B1221] border border-white/10 rounded-2xl p-8 hover:border-white/20 transition-colors duration-300"
+    }
+  },
+  "sections_flow": [
+    {
+      "id": "hero",
+      "name": "Hero & Experience",
+      "description": "First section as requested. A bento-grid splitting 'Hire Me' (photo, tagline, contact, resume btn) and 'Experience Timeline'."
+    },
+    {
+      "id": "about",
+      "name": "About Me",
+      "description": "Narrative section emphasizing 1.5 years of experience in driving digital growth. Use large typography to make the '1.5 Years' pop."
+    },
+    {
+      "id": "portfolio",
+      "name": "Graphic Design Portfolio",
+      "description": "Shadcn Tabs component to filter between 'Ad Creatives', 'Festival Posts', and 'LinkedIn Carousels'."
+    },
+    {
+      "id": "results",
+      "name": "Meta Ads Results",
+      "description": "Two campaign performance screenshots displayed side-by-side in sleek glassmorphic frames."
+    },
+    {
+      "id": "connect",
+      "name": "Connect With Me",
+      "description": "Social media links using real brand logos via react-icons."
+    },
+    {
+      "id": "footer",
+      "name": "Thank You",
+      "description": "Minimalist ending section expressing gratitude."
+    }
+  ],
+  "media": {
+    "user_photo": "https://customer-assets.emergentagent.com/job_d5d9d62d-a8cb-402b-871a-858009070525/artifacts/l73o5rga_dhiraj%20photo%20%284%29.png",
+    "meta_ads_screenshots": [
+      "https://customer-assets.emergentagent.com/job_d5d9d62d-a8cb-402b-871a-858009070525/artifacts/m6nc060o_image.png",
+      "https://customer-assets.emergentagent.com/job_d5d9d62d-a8cb-402b-871a-858009070525/artifacts/n72lfn0m_image.png"
+    ],
+    "portfolio_placeholders": {
+      "ad_creative": "https://static.prod-images.emergentagent.com/jobs/d5d9d62d-a8cb-402b-871a-858009070525/images/a5ffab54b7db00260374b3f75dd21c988b80aa1502790d03a8d79d7f1a246091.png",
+      "festival_post": "https://static.prod-images.emergentagent.com/jobs/d5d9d62d-a8cb-402b-871a-858009070525/images/515ca4f4da164c11bae299b3b570bc9067a3d9b91fb4201259e3bad3d59f0887.png",
+      "linkedin_carousel": "https://static.prod-images.emergentagent.com/jobs/d5d9d62d-a8cb-402b-871a-858009070525/images/a83f0f472d478b640024f7aa8f57ff0c8a9b117615bf95d4642671a1800cc1c2.png"
+    },
+    "hero_background_abstract": "https://static.prod-images.emergentagent.com/jobs/d5d9d62d-a8cb-402b-871a-858009070525/images/b796e744ebe88ef67778c48d40b74c9adee51d85b27a6f350a91481d5a5255f4.png"
+  },
+  "social_links": {
+    "instagram": "https://www.instagram.com/dhiraj.dayanand/",
+    "linkedin": "https://www.linkedin.com/in/dhirajdayanand/",
+    "facebook": "https://www.facebook.com/profile.php?id=61576040181777",
+    "x": "https://x.com/DhirajMuthal4"
+  },
+  "instructions_to_main_agent": [
+    "Use pure HTML/Tailwind for the main layout structures to allow asymmetrical bento-grid designs.",
+    "Install and use 'react-icons' for the social media section (FaInstagram, FaLinkedin, FaFacebook, FaXTwitter). The user strictly wants real logos.",
+    "Ensure the Google Font 'Poppins' (weights 400 and 700) is imported in index.css and applied globally or via Tailwind config.",
+    "For the Graphic Design Portfolio, implement Shadcn Tabs. Use the provided portfolio_placeholders to populate the tab contents.",
+    "Add 'data-testid' to all buttons, links, and major section wrappers.",
+    "Use framer-motion for smooth entrance animations (fade-up, stagger children) as the user scrolls.",
+    "Wrap the meta ad screenshots in a subtle glassmorphism or neat border card with rounded corners to make them look premium.",
+    "For the hero background, use the provided hero_background_abstract image with a heavy black overlay (e.g., bg-black/60) so it acts as a subtle texture behind the Bento grid."
+  ]
+}
